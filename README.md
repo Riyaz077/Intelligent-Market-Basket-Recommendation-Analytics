@@ -82,4 +82,7 @@ MarketMindAI/
 - Recommendation quality should be evaluated with offline ranking metrics and controlled experiments before business use.
 
 ## Author
-Mohamed Riyaz S.
+
+**Mohamed Riyaz S.**  
+Integrated M.Tech, Computer Science and Engineering (Business Analytics)  
+VIT Chennai
