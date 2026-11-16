@@ -15,37 +15,28 @@ MarketMind AI is an end-to-end retail analytics demo that discovers product asso
 - FastAPI endpoints for rule discovery and recommendations
 - Unit tests, methodology documentation, and exploratory notebook
 
-## Quick start
+## Quick Start
 
-Python 3.10+ recommended.
+- Ensure Python 3.10 or later is installed.
+- Create and activate a Python virtual environment.
+- Install the required dependencies from `requirements.txt`.
+- Generate the sample transaction dataset.
+- Launch the interactive Streamlit dashboard.
+- Explore customer purchasing patterns and market basket analytics.
 
-```bash
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# macOS/Linux
-source .venv/bin/activate
+## API Usage
 
-pip install -r requirements.txt
-python scripts/generate_data.py
-streamlit run app/streamlit_app.py
-```
+- Start the FastAPI backend in a separate terminal.
+- Access interactive API documentation at `http://127.0.0.1:8000/docs`.
+- Submit product combinations to the `/recommend` POST endpoint.
+- Analyze frequently purchased product combinations.
+- Generate association-based product recommendations in JSON format.
 
-## Run the API
+**Example input parameters:**
 
-In another terminal:
-```bash
-uvicorn api.main:app --reload
-```
-
-Open `http://127.0.0.1:8000/docs`.
-
-Example request:
-```bash
-curl -X POST "http://127.0.0.1:8000/recommend" \
-  -H "Content-Type: application/json" \
-  -d '{"basket":["Coffee","Milk"]}'
-```
+- Customer basket containing purchased products.
+- Product combinations for association analysis.
+- Transaction patterns for identifying cross-selling opportunities.
 
 ## Project structure
 
